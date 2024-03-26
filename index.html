@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>CHRONOS</title>
+	<meta name="description" content="Threejs demo landing page for product visualization using WEBGi">
+
+	<meta property="og:url" content="http://drill-webgi-tutorial.vercel.app">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Threejs demo landing page for product visualization using WEBGi">
+	<meta property="og:description" content="Threejs demo landing page for product visualization using WEBGi">
+	<meta property="og:image" content="http://drill-webgi-tutorial.vercel.app/assets/images/preview.jpg">
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta property="twitter:domain" content="drill-webgi-tutorial.vercel.app">
+	<meta property="twitter:url" content="http://drill-webgi-tutorial.vercel.app">
+	<meta name="twitter:title" content="Threejs demo landing page for product visualization using WEBGi">
+	<meta name="twitter:description"
+		content="Threejs demo landing page for product visualization using WEBGi">
+	<meta name="twitter:image" content="http://drill-webgi-tutorial.vercel.app/assets/images/preview.jpg">
+
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="author" content="www.neotix.com.br">
+
+	<meta charset="UTF-8" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="https://cdn.jsdelivr.net/npm/splitting@1.0.5/dist/splitting.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+	<link rel="manifest" href="assets/favicons/site.webmanifest">
+	<meta name="msapplication-TileColor" content="#F2CE6E">
+	<meta name="theme-color" content="#F2CE6E">
+
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<div class="loader">
+		<p>Loading... Please wait</p>
+		<div class="progress"></div>
+	</div>
+	<nav class="nav--bar">
+		<img class="logo" src="assets/images/logo.png" >
+		<!-- <button class="button--navbar">BUY NOW</button> -->
+	</nav>
+
+	<div class="container">
+		<section class="section first">
+			<div class="section--one--container">
+				<h2>Time.<br/>Elevated.</h2>
+				<p>Experience the pinnacle of precision timekeeping. Crafted for those who value every second.</p>
+				<!-- <button class="button--hero">KNOW MORE</button> -->
+			</div>
+		</section>
+
+		<section class="section second">
+			<div class="section--two--container">
+				<h2>Classy Comfort<br/> and Modern Edge</h2>
+				<p>Each watch is a statement piece, designed with a unique blend of timeless elegance and modern sophistication. Our collection offers a variety of styles to complement your individuality</p>
+			</div>
+			<div class="custom--bg"></div>
+		</section>
+
+		<section class="section third">
+			<div class="section--third--container">
+				<h2>Built to Last.</h2>
+				<p>Chronos watches are engineered 
+					to endure the test of time. We use only 
+					the most durable materials, ensuring your watch becomes a cherished companion for years to come.</p>
+				<!-- <button class="button--customize">CUSTOMIZE</button> -->
+			</div>
+			<div class="custom--bg2"></div>
+		</section>
+
+        <section class="section fourth">
+			<div class="section--fourth--container">
+			   <div class="section--fourth--logo">
+				<h1>CHR</h1>
+				<h1>NOS</h1>
+			</div>
+			
+			<div class="sub-title"><h2>Time. Mastered.</h2></div>
+			
+              	<!-- <button class="button--customize">CUSTOMIZE</button> -->
+			</div>
+		</section>
+
+	</div>
+
+	<div id="webgi-canvas-container">
+		<canvas id="webgi-canvas"></canvas>
+		<button class="button--customize button--exit">EXIT</button>
+	</div>
+
+	<div class="customizer--container">
+		<ul class="strap--colors">
+			<li class="button--colors yellow"></li>
+			<li class="button--colors red"></li>
+			<li class="button--colors black"></li>
+		</ul>
+	</div>
+<!-- <section class="main-footer">
+	<footer class="footer01">
+			<div class="main-footer">
+				<div class="section1">
+					<img src="./assets/images/flogo.png" alt="logo">
+					<p>Conditions</p>
+					<p>Terms of Use</p>
+					<p>Our Services</p>
+					<button class="button-ctc">Contact Us</button>
+				</div>
+				<div class="section2">
+					<h3>CONTACT INFO</h3>
+					<p>2715 Ash Dr. San Jose,</p>
+					<p>South Dakota 83475</p>
+					<p><i class="fa-solid fa-phone"></i>+91XXXXXXXXXX</p>
+					<p><i class="fa-solid fa-envelope"></i>demo@reboot.in</p>
+				</div>
+				<div class="section3">
+					<h3>NEWSLETTER</h3>
+					<p>Subscribe to our newsletter to get the latest news and offers</p>
+					<input type="text" placeholder="Your Mail Here"><i class="fa-solid fa-arrow-right"></i>
+				</div>
+			</div>
+		</footer>
+
+		<section class="footer02">
+			<button class="button--footer"> &#8593;</button>
+		</section>
+
+		<section class="footer03">
+			<div class="divider"></div>			
+		</section>
+
+		<section class="footer04">">
+				<p>© 2024 Chronos. All rights reserved.</p>
+		</section>
+	</section> -->
+
+	<script src="src/index.ts"></script>
+	
+</body>
+
+</html>
